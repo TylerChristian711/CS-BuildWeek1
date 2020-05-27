@@ -16,6 +16,7 @@
 		E313C2A8247D8BF800190043 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313C2A7247D8BF800190043 /* CellViewModel.swift */; };
 		E313C2AA247D8CD600190043 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313C2A9247D8CD600190043 /* CellView.swift */; };
 		E313C2AD247D917000190043 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313C2AC247D917000190043 /* GameScene.swift */; };
+		E313C2AF247EC4A400190043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313C2AE247EC4A400190043 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E313C2A7247D8BF800190043 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		E313C2A9247D8CD600190043 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		E313C2AC247D917000190043 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E313C2AE247EC4A400190043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E313C29F247D6E7A00190043 /* Info.plist */,
 				E313C2A9247D8CD600190043 /* CellView.swift */,
 				E313C2AC247D917000190043 /* GameScene.swift */,
+				E313C2AE247EC4A400190043 /* ViewController.swift */,
 			);
 			path = GameOfLifeBuildWeek;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				E313C2A6247D7ED200190043 /* GameSceneModel.swift in Sources */,
 				E313C2AA247D8CD600190043 /* CellView.swift in Sources */,
 				E313C292247D6E7800190043 /* AppDelegate.swift in Sources */,
+				E313C2AF247EC4A400190043 /* ViewController.swift in Sources */,
 				E313C2A8247D8BF800190043 /* CellViewModel.swift in Sources */,
 				E313C294247D6E7800190043 /* SceneDelegate.swift in Sources */,
 			);
