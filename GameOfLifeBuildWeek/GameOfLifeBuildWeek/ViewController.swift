@@ -10,9 +10,13 @@ import SpriteKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var genTextView: UITextView!
     @IBOutlet weak var cellsView: SKView!
     @IBOutlet weak var pauseButton: UIButton!
     private var gameScene: GameScene?
+    var viewModel: GameSceneModel?
+    var gen: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func newGameTapped(_ sender: Any) {
         gameScene?.newGame()
+        generationToStrings()
     }
     
     
@@ -34,7 +39,14 @@ class ViewController: UIViewController {
         pauseButton.setTitle(gameScene?.title, for: .normal)
     }
     
-
     
+     func generationToStrings() {
+        guard let genString = gameScene?.generationCount() else { return }
+        genTextView.text = "Gen passed \(genString)"
+        }
+        
+    }
 
-}
+
+
+

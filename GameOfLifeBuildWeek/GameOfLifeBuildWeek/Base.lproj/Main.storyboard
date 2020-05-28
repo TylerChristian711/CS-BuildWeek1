@@ -37,14 +37,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Gen passed" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q48-m5-gef">
+                                <rect key="frame" x="87" y="807" width="240" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q48-m5-gef" secondAttribute="bottom" constant="13" id="DQ9-Ar-nms"/>
                             <constraint firstItem="pU8-JE-NcU" firstAttribute="top" secondItem="qUP-S7-jsS" secondAttribute="bottom" constant="20" id="EXh-lU-7wd"/>
                             <constraint firstItem="qUP-S7-jsS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Efz-CL-7DJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pU8-JE-NcU" secondAttribute="bottom" constant="13" id="JJZ-1r-Egs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q48-m5-gef" secondAttribute="trailing" constant="87" id="MKj-st-tMw"/>
                             <constraint firstItem="pU8-JE-NcU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MzF-Ya-pwp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pU8-JE-NcU" secondAttribute="trailing" constant="20" id="Nmh-cl-Wzm"/>
+                            <constraint firstItem="q48-m5-gef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Oiu-aj-lvw"/>
+                            <constraint firstItem="q48-m5-gef" firstAttribute="top" secondItem="qUP-S7-jsS" secondAttribute="bottom" constant="8" id="PQM-lq-BiF"/>
                             <constraint firstItem="qUP-S7-jsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VPN-WY-tpu"/>
                             <constraint firstItem="qUP-S7-jsS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="33" id="hSh-ZB-msJ"/>
                         </constraints>
@@ -52,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="cellsView" destination="qUP-S7-jsS" id="WzM-YQ-egp"/>
+                        <outlet property="genTextView" destination="q48-m5-gef" id="fto-Nr-6fm"/>
                         <outlet property="pauseButton" destination="rCr-ZA-9cW" id="3Yk-U7-Xa0"/>
                     </connections>
                 </viewController>

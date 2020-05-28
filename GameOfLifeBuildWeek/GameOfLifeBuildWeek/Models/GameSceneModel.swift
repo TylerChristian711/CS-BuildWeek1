@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class GameSceneModel {
+class GameSceneModel   {
     var cellViewArray: [CellViewModel] = []
     var cellViewInnerArray: [CellViewModel] = []
     var generation: Int = 0
@@ -65,6 +65,6 @@ final class GameSceneModel {
             $0.alive = arc4random_uniform(2) == 0 ? true :false
             $0.alivePrePass = false
         }
-        generation = 0
+        generation += 1
     }
 }

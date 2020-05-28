@@ -69,6 +69,7 @@ final class GameScene: SKScene {
                 viewModel.addInnerCell(cellState: cellState, row: row, column: column)
                 addChild(cellView)
                 cellCount += 1
+                viewModel.generation += 1 
             }
         }
     }
@@ -87,11 +88,38 @@ final class GameScene: SKScene {
         {
             self.cellsView.isPaused = false
         }
+        
+    }
+    
+    func generationCount() -> String {
+        viewModel.cellViewInnerArray.forEach { viewModel.checkLifeState(cellState: $0) }
+        viewModel.cellViewInnerArray.forEach { $0.alive = $0.alivePrePass }
+        viewModel.generation += 1
+        return String(viewModel.generation)
     }
     
     func togglePaused() {
         cellsView.isPaused.toggle()
     }
+    
+    override var isUserInteractionEnabled: Bool {
+        get {
+            return true
+        }
+        set {
+            // ignore
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        
+         let location = touch.location(in: self)
+         let touchedNodes = nodes(at: location)
+        let frontTouchedNode = atPoint(location)
+    }
+    
+    
     
 }
 
